@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Core", "Sandbox.Core\Sandbox.Core.csproj", "{86CED3BD-666F-48DF-A463-2CAE8119A98C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Lambda", "Sandbox.Lambda\Sandbox.Lambda.csproj", "{136AA2B7-E3B7-41DF-A8EE-A028AC96C10E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Tester", "Sandbox.Tester\Sandbox.Tester.csproj", "{B0BD4478-B99E-4559-ACDB-140B40C06CF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86CED3BD-666F-48DF-A463-2CAE8119A98C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{86CED3BD-666F-48DF-A463-2CAE8119A98C}.Debug|x86.Build.0 = Debug|Any CPU
+		{86CED3BD-666F-48DF-A463-2CAE8119A98C}.Release|x86.ActiveCfg = Release|Any CPU
+		{86CED3BD-666F-48DF-A463-2CAE8119A98C}.Release|x86.Build.0 = Release|Any CPU
+		{136AA2B7-E3B7-41DF-A8EE-A028AC96C10E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{136AA2B7-E3B7-41DF-A8EE-A028AC96C10E}.Debug|x86.Build.0 = Debug|Any CPU
+		{136AA2B7-E3B7-41DF-A8EE-A028AC96C10E}.Release|x86.ActiveCfg = Release|Any CPU
+		{136AA2B7-E3B7-41DF-A8EE-A028AC96C10E}.Release|x86.Build.0 = Release|Any CPU
+		{B0BD4478-B99E-4559-ACDB-140B40C06CF4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B0BD4478-B99E-4559-ACDB-140B40C06CF4}.Debug|x86.Build.0 = Debug|Any CPU
+		{B0BD4478-B99E-4559-ACDB-140B40C06CF4}.Release|x86.ActiveCfg = Release|Any CPU
+		{B0BD4478-B99E-4559-ACDB-140B40C06CF4}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
