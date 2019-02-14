@@ -24,24 +24,24 @@ namespace AmazonWebServices
                 Console.WriteLine(">> " + tableName);
         }
 
-        public static void GetItemRaw(string table, string keyName, string keyValue)
-        {
-            Dictionary<string, AttributeValue> key = new Dictionary<string, AttributeValue>
-            {
-                { keyName, new AttributeValue{ S = keyValue} }
-            };
+        //public static void GetItemRaw(string table, string keyName, string keyValue)
+        //{
+        //    Dictionary<string, AttributeValue> key = new Dictionary<string, AttributeValue>
+        //    {
+        //        { keyName, new AttributeValue{ S = keyValue} }
+        //    };
 
-            GetItemRequest request = new GetItemRequest
-            {
-                TableName = table,
-                Key = key
-            };
+        //    GetItemRequest request = new GetItemRequest
+        //    {
+        //        TableName = table,
+        //        Key = key
+        //    };
 
-            Task<GetItemResponse> t = client.GetItemAsync(request);
-            t.Wait(10000);
-            GetItemResponse response = t.Result;
+        //    Task<GetItemResponse> t = client.GetItemAsync(request);
+        //    t.Wait(10000);
+        //    GetItemResponse response = t.Result;
 
-        }
+        //}
 
         public static void GetItem(string tableName, string value)
         {
