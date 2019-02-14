@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.3.31.9" />
+    <PackageReference Include="AWSSDK.S3" Version="3.3.31.17" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.17.7" />
+    <PackageReference Include="AWSSDK.Lambda" Version="3.3.19.18" />
+  </ItemGroup>
+</Project>

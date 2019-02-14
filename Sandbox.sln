@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Lambda", "Sandbox.L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Tester", "Sandbox.Tester\Sandbox.Tester.csproj", "{B0BD4478-B99E-4559-ACDB-140B40C06CF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonWebServices", "AmazonWebServices\AmazonWebServices.csproj", "{DCC2DB32-503A-4989-AE56-F104E8805AAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,5 +27,9 @@ Global
 		{B0BD4478-B99E-4559-ACDB-140B40C06CF4}.Debug|x86.Build.0 = Debug|Any CPU
 		{B0BD4478-B99E-4559-ACDB-140B40C06CF4}.Release|x86.ActiveCfg = Release|Any CPU
 		{B0BD4478-B99E-4559-ACDB-140B40C06CF4}.Release|x86.Build.0 = Release|Any CPU
+		{DCC2DB32-503A-4989-AE56-F104E8805AAC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DCC2DB32-503A-4989-AE56-F104E8805AAC}.Debug|x86.Build.0 = Debug|Any CPU
+		{DCC2DB32-503A-4989-AE56-F104E8805AAC}.Release|x86.ActiveCfg = Release|Any CPU
+		{DCC2DB32-503A-4989-AE56-F104E8805AAC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
