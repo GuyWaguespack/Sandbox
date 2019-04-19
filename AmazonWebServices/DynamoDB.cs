@@ -11,7 +11,7 @@ namespace AmazonWebServices
 {
     public class DynamoDB
     {
-        public static AmazonDynamoDBClient client = new AmazonDynamoDBClient(RegionEndpoint.USEast1);
+        public static AmazonDynamoDBClient client = new AmazonDynamoDBClient(Utils.LoadProfile(), RegionEndpoint.USEast1);
 
         public static void ListTables()
         {

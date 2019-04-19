@@ -1,6 +1,6 @@
 ﻿using System;
 
-using Sandbox.Lambda;
+using AmazonWebServices;
 
 namespace Sandbox.Tester
 {
@@ -8,8 +8,7 @@ namespace Sandbox.Tester
     {
         static void Main(string[] args)
         {
-            SandboxLambda lam = new SandboxLambda();
-            lam.ToUpperLambda("Hello World", null);
+            Console.WriteLine("Hello World");
         }
     }
 }

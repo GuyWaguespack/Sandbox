@@ -10,7 +10,7 @@ namespace AmazonWebServices
 {
     public class Lambda
     {
-        public static AmazonLambdaClient client = new AmazonLambdaClient(RegionEndpoint.USEast1);
+        public static AmazonLambdaClient client = new AmazonLambdaClient(Utils.LoadProfile(), RegionEndpoint.USEast1);
 
         public static string CallMethod(string functionName, string json)
         {

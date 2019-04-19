@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sandbox.Lambda\Sandbox.Lambda.csproj" />
-    <ProjectReference Include="..\Sandbox.Core\Sandbox.Core.csproj" />
+    <ProjectReference Include="..\AmazonWebServices\AmazonWebServices.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
   </ItemGroup>
 </Project>

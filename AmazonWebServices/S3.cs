@@ -3,12 +3,13 @@ using System.Threading.Tasks;
 using Amazon.S3;
 using Amazon.S3.Model;
 using Amazon;
+using Amazon.Runtime;
 
 namespace AmazonWebServices
 {
     public class S3
     {
-        public static AmazonS3Client client = new AmazonS3Client(RegionEndpoint.USEast1);
+        public static AmazonS3Client client = new AmazonS3Client(Utils.LoadProfile(), RegionEndpoint.USEast1);
 
         public static void ListBuckets()
         {
