@@ -1,15 +1,13 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Core", "Sandbox.Core\Sandbox.Core.csproj", "{86CED3BD-666F-48DF-A463-2CAE8119A98C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Lambda", "Sandbox.Lambda\Sandbox.Lambda.csproj", "{136AA2B7-E3B7-41DF-A8EE-A028AC96C10E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Tester", "Sandbox.Tester\Sandbox.Tester.csproj", "{B0BD4478-B99E-4559-ACDB-140B40C06CF4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonWebServices", "AmazonWebServices\AmazonWebServices.csproj", "{DCC2DB32-503A-4989-AE56-F104E8805AAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.General", "Sandbox.General\Sandbox.General.csproj", "{ED25601F-0C4D-4E44-A02F-913F496617EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.SecurePassword", "Sandbox.SecurePassword\Sandbox.SecurePassword.csproj", "{BE595F63-4794-4B63-8CC4-DFE37710C032}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Crypto", "Sandbox.Crypto\Sandbox.Crypto.csproj", "{85B35BAB-3D4D-40DA-A5C9-589E8B07EB6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,18 +15,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{86CED3BD-666F-48DF-A463-2CAE8119A98C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{86CED3BD-666F-48DF-A463-2CAE8119A98C}.Debug|x86.Build.0 = Debug|Any CPU
-		{86CED3BD-666F-48DF-A463-2CAE8119A98C}.Release|x86.ActiveCfg = Release|Any CPU
-		{86CED3BD-666F-48DF-A463-2CAE8119A98C}.Release|x86.Build.0 = Release|Any CPU
-		{136AA2B7-E3B7-41DF-A8EE-A028AC96C10E}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{136AA2B7-E3B7-41DF-A8EE-A028AC96C10E}.Debug|x86.Build.0 = Debug|Any CPU
-		{136AA2B7-E3B7-41DF-A8EE-A028AC96C10E}.Release|x86.ActiveCfg = Release|Any CPU
-		{136AA2B7-E3B7-41DF-A8EE-A028AC96C10E}.Release|x86.Build.0 = Release|Any CPU
-		{B0BD4478-B99E-4559-ACDB-140B40C06CF4}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{B0BD4478-B99E-4559-ACDB-140B40C06CF4}.Debug|x86.Build.0 = Debug|Any CPU
-		{B0BD4478-B99E-4559-ACDB-140B40C06CF4}.Release|x86.ActiveCfg = Release|Any CPU
-		{B0BD4478-B99E-4559-ACDB-140B40C06CF4}.Release|x86.Build.0 = Release|Any CPU
 		{DCC2DB32-503A-4989-AE56-F104E8805AAC}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{DCC2DB32-503A-4989-AE56-F104E8805AAC}.Debug|x86.Build.0 = Debug|Any CPU
 		{DCC2DB32-503A-4989-AE56-F104E8805AAC}.Release|x86.ActiveCfg = Release|Any CPU
@@ -37,5 +23,13 @@ Global
 		{ED25601F-0C4D-4E44-A02F-913F496617EF}.Debug|x86.Build.0 = Debug|Any CPU
 		{ED25601F-0C4D-4E44-A02F-913F496617EF}.Release|x86.ActiveCfg = Release|Any CPU
 		{ED25601F-0C4D-4E44-A02F-913F496617EF}.Release|x86.Build.0 = Release|Any CPU
+		{BE595F63-4794-4B63-8CC4-DFE37710C032}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BE595F63-4794-4B63-8CC4-DFE37710C032}.Debug|x86.Build.0 = Debug|Any CPU
+		{BE595F63-4794-4B63-8CC4-DFE37710C032}.Release|x86.ActiveCfg = Release|Any CPU
+		{BE595F63-4794-4B63-8CC4-DFE37710C032}.Release|x86.Build.0 = Release|Any CPU
+		{85B35BAB-3D4D-40DA-A5C9-589E8B07EB6D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{85B35BAB-3D4D-40DA-A5C9-589E8B07EB6D}.Debug|x86.Build.0 = Debug|Any CPU
+		{85B35BAB-3D4D-40DA-A5C9-589E8B07EB6D}.Release|x86.ActiveCfg = Release|Any CPU
+		{85B35BAB-3D4D-40DA-A5C9-589E8B07EB6D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -17,15 +17,21 @@ namespace AmazonWebServices
         {
             Console.WriteLine(Utils.CurrentMethod);
             GetCostAndUsageRequest request = new GetCostAndUsageRequest();
-            request.TimePeriod = new DateInterval() { Start = "2019-03-01", End = "2019-04-01" };
+            request.TimePeriod = new DateInterval() { Start = "2019-04-01", End = "2019-05-01" };
             request.Granularity = Granularity.MONTHLY;
             request.Metrics = new List<string>();
             request.Metrics.Add(Metric.AMORTIZED_COST);
             request.Metrics.Add(Metric.BLENDED_COST);
+            request.Metrics.Add(Metric.NET_AMORTIZED_COST);
+            request.Metrics.Add(Metric.NET_UNBLENDED_COST);
+            request.Metrics.Add(Metric.NORMALIZED_USAGE_AMOUNT);
+            request.Metrics.Add(Metric.UNBLENDED_COST);
+            request.Metrics.Add(Metric.USAGE_QUANTITY);
 
             request.GroupBy = new List<GroupDefinition>();
+            request.GroupBy.Add(new GroupDefinition { Type = GroupDefinitionType.DIMENSION, Key = Dimension.LINKED_ACCOUNT });
             request.GroupBy.Add(new GroupDefinition { Type = GroupDefinitionType.TAG, Key = "cloud-environment" });
-            request.GroupBy.Add(new GroupDefinition { Type = GroupDefinitionType.DIMENSION, Key = Dimension.SERVICE });
+//            request.GroupBy.Add(new GroupDefinition { Type = GroupDefinitionType.DIMENSION, Key = Dimension.SERVICE });
 
             bool keepLooking = true;
             int callCount = 0;
@@ -46,7 +52,7 @@ namespace AmazonWebServices
 
                 if (String.IsNullOrWhiteSpace(nextPageToken))
                     keepLooking = false;
-                else if (callCount > 30)
+                else if (callCount > 100)
                     keepLooking = false;
                 else
                     request.NextPageToken = nextPageToken;
