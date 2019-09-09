@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.SecurePassword", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Crypto", "Sandbox.Crypto\Sandbox.Crypto.csproj", "{85B35BAB-3D4D-40DA-A5C9-589E8B07EB6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureCostManagement", "AzureCostManagement\AzureCostManagement.csproj", "{05E91EC7-4B87-45FA-930C-4C12DFAB3305}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -31,5 +33,9 @@ Global
 		{85B35BAB-3D4D-40DA-A5C9-589E8B07EB6D}.Debug|x86.Build.0 = Debug|Any CPU
 		{85B35BAB-3D4D-40DA-A5C9-589E8B07EB6D}.Release|x86.ActiveCfg = Release|Any CPU
 		{85B35BAB-3D4D-40DA-A5C9-589E8B07EB6D}.Release|x86.Build.0 = Release|Any CPU
+		{05E91EC7-4B87-45FA-930C-4C12DFAB3305}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{05E91EC7-4B87-45FA-930C-4C12DFAB3305}.Debug|x86.Build.0 = Debug|Any CPU
+		{05E91EC7-4B87-45FA-930C-4C12DFAB3305}.Release|x86.ActiveCfg = Release|Any CPU
+		{05E91EC7-4B87-45FA-930C-4C12DFAB3305}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
