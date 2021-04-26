@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureCostManagement", "Azur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.OAuth", "Sandbox.OAuth\Sandbox.OAuth.csproj", "{F14B51B3-2540-400F-9B47-387C555A9A0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Email", "Sandbox.Email\Sandbox.Email.csproj", "{7100D152-40AA-455E-B9B6-35AF7E7A25F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -43,5 +45,9 @@ Global
 		{F14B51B3-2540-400F-9B47-387C555A9A0F}.Debug|x86.Build.0 = Debug|Any CPU
 		{F14B51B3-2540-400F-9B47-387C555A9A0F}.Release|x86.ActiveCfg = Release|Any CPU
 		{F14B51B3-2540-400F-9B47-387C555A9A0F}.Release|x86.Build.0 = Release|Any CPU
+		{7100D152-40AA-455E-B9B6-35AF7E7A25F1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7100D152-40AA-455E-B9B6-35AF7E7A25F1}.Debug|x86.Build.0 = Debug|Any CPU
+		{7100D152-40AA-455E-B9B6-35AF7E7A25F1}.Release|x86.ActiveCfg = Release|Any CPU
+		{7100D152-40AA-455E-B9B6-35AF7E7A25F1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
