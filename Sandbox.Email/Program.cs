@@ -8,11 +8,12 @@ namespace Sandbox.Email
     {
         static void Main(string[] args)
         {
-            MailAddress fromAddress = new MailAddress("xxxxxxxx@company.com", "John Smith");
-            MailAddress toAddress = new MailAddress("xxxxxxxx@company.com", "Jane Doe");
+            MailAddress fromAddress = new MailAddress("fromuser@company.com", "From User");
             const string fromPassword = "xxxxxxxxxxxxxxxx";
             const string subject = "Test Subject";
-            const string body = "Test Body";
+
+            const string body = "<htlm><body><h1>Test Body</h1></body></html>";
+            const bool isHtml = true;
 
             var smtp = new SmtpClient
             {
@@ -23,13 +24,20 @@ namespace Sandbox.Email
                 UseDefaultCredentials = false,
                 Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
             };
-            using (MailMessage message = new MailMessage(fromAddress, toAddress)
+
+            using (MailMessage message = new MailMessage())
             {
-                Subject = subject,
-                Body = body
-            })
-            {
+                message.Subject = subject;
+                message.Body = body;
+                message.IsBodyHtml = isHtml;
+
+                message.To.Add(new MailAddress("touser@outlook.com", "Outlook User"));
+                message.To.Add(new MailAddress("touser@gmail.com", "Gmail User"));
+
+                message.From = fromAddress;
+
                 smtp.Send(message);
+                Console.WriteLine("Message Sent");
             }
         }
     }
