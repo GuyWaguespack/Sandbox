@@ -11,6 +11,6 @@
     <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.100.6" />
     <PackageReference Include="AWSSDK.Lambda" Version="3.3.100.6" />
     <PackageReference Include="AWSSDK.CostExplorer" Version="3.3.100.6" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 </Project>
